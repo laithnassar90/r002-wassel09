@@ -1,10 +1,15 @@
-// server.js
-const express = require('express');
-const path = require('path');
-const helmet = require('helmet');
-const morgan = require('morgan');
-const compression = require('compression');
-const cors = require('cors');
+// server.js (ES module version)
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import compression from 'compression';
+import cors from 'cors';
+
+// For __dirname in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
