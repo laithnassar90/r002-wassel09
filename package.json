@@ -1,6 +1,8 @@
 {
   "name": "wassel-app",
   "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
     "build": "vite build",
@@ -22,8 +24,6 @@
     "react-router-dom": "^5.3.4",
     "react-sizeme": "^3.0.2",
     "redux": "^5.0.1"
-	
-	
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
